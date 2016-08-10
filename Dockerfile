@@ -4,6 +4,8 @@ MAINTAINER Cryptomental "cryptomental.com@gmail.com"
 # Install build dependencies
 USER root
 RUN apt-get update -y && apt-get -y install git make gcc libssl-dev libgmp-dev python-dev libxml2-dev libxslt1-dev zlib1g-dev nodejs-legacy npm
+# Install common tools
+RUN apt-get install -y vim mc
 RUN npm install -g bower
 USER $PISTON_USER
 
