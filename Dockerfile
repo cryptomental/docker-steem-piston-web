@@ -27,4 +27,4 @@ RUN git clone https://github.com/xeroc/python-steem \
     && cd $PISTON_HOME
 RUN pip3 install --user eventlet
 
-
+ENV PYTHONIOENCODING UTF-8
